@@ -69,6 +69,7 @@ body, html{
 .test{
     display: flex;
     flex-direction: row;
+    margin-left: 38%;
 }
 
 .menu_item, .menu_info{
@@ -79,6 +80,24 @@ body, html{
     font-family: "Montserrat";
     font-weight: 600;
     text-align: center;
+}
+
+.menu_info{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.menu_phone{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.menu_phone_descr{
+    font-size: 9px;
+    letter-spacing: -0.5px;
+    margin-top: -30px;
+    font-weight: 400;
 }
 
 .profile::before{
@@ -106,7 +125,36 @@ body, html{
 }
 
 .menu_icon{
-    margin-left: 10%;
+    margin-left: 8%;
+}
+
+.dropdown__menu {
+    margin-top: -15px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 420px;
+    height: 413px;
+    background-color: #0d3351;
+}
+
+.dropdown__list {
+    margin: 50px 0px 30px 30px;
+}
+
+.dropdown__list a{
+    margin-bottom: 20px;
+    display: flex;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    color: #ffffff;
+    font-family: "Roboto Slab";
+    font-weight: 400;
+    text-decoration: none;
 }
 
 .menu_icon::before{
@@ -115,8 +163,12 @@ body, html{
     font-size: 15px;
 }
 
+.menu_icon:hover .dropdown__menu {
+    display: block;
+}
+
 .header__content{
-    margin-top: 50px;
+    margin-top: 30px;
     text-align: center;
 }
 
@@ -140,3 +192,86 @@ body, html{
     text-align: center;
     text-transform: uppercase;
 }
+
+.header__button{
+    margin-top: 0px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 48px;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-weight: 400;
+    text-align: center;
+    width: 202px;
+    height: 47px;
+    background-color: #33c7fd;
+    border: none;
+    outline:none;
+}
+
+.header__button:hover{
+    background-color: #13b0e9;
+}
+
+.header__button:active{
+    background-color: #64d6ff;
+    border: none;
+}
+
+/*tablet*/
+@media screen and (min-width: 900px) and (max-width: 1280px) {
+    .test{
+        display: flex;
+        flex-direction: row;
+        margin-left: 18%;
+    }
+
+    .header__content p {
+        font-size: 26px;
+    }
+
+    .header__content h2 {
+        font-size: 72px;
+    }
+}
+
+/*phone*/
+@media screen and (max-width: 900px) {
+    .header{
+        height: 599px;
+    }
+
+    .menu_icon{
+        margin-left: 3%;
+    }
+
+    .test{
+        display: none;
+    }
+
+    .header__content{
+        margin-top: -10px;
+        text-align: center;
+    }
+
+    .header__content p {
+        font-size: 20px;
+    }
+
+    .header__content h2 {
+        font-size: 50px;
+        letter-spacing: -1px;
+    }
+
+    .header__content h2 span {
+        width: 100%;
+        flex-direction: column;
+        display: inline-block;
+        margin-bottom: 30px;
+    }
+
+    .header__button{
+        margin-top: 0px;
+    }
+}
+  
