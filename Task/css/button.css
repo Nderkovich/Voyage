@@ -1,0 +1,26 @@
+.tour__button {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-family: "Montserrat";
+    width: 202px;
+    height: 47px;
+    background-color: #33c7fd;
+    border: none;
+    outline: none;
+}
+
+.tour__button .arrow::after{
+    content: "\ea1c";
+    font-family: "icomoon";
+    font-size: 9px;
+    margin-left: 5px;
+}
+
+.tour__button:hover {
+    background-color: #13b0e9;
+}
+
+.tour__button:active {
+    background-color: #64d6ff;
+}
