@@ -124,6 +124,15 @@
     text-transform: uppercase;
 }
 
+.header__snake{
+    padding-top: 20px;
+    text-align: center;
+    position: relative;
+}
+.header__snake .snake{
+    height: 297px;
+}
+
 /*tablet*/
 
 @media screen and (min-width: 900px) and (max-width: 1280px) {
@@ -174,5 +183,8 @@
         margin-top: 40px;
         margin-bottom: 40px;
         font-size: 50px;
+    }
+    .header__snake .snake{
+        height: 230px;
     }
 }
