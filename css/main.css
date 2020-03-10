@@ -1,5 +1,5 @@
 body, html{
-    margin: 0px;
+    margin: 0;
     height: 100%;
     background-color: #f3f3f3;
 }
@@ -27,13 +27,13 @@ body, html{
     margin: 125px 0 35px 0;
 }
 
-.catalog .catalog__name{
+.catalog__name{
     font-size: 36px;
-    margin: 0 0;
+    margin: 0;
 }
 
-.catalog .catalog__sorter{
-    margin: 0 0;
+.catalog__sorter{
+    margin: 0;
     font-size: 14px;
 }
 
