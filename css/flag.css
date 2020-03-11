@@ -1,9 +1,9 @@
 
-.flag_color_hit{
+.flag_hit{
     background-image: url("../assets/images/flag_blue.png");
 }
 
-.flag_color_sale{
+.flag_sale{
     background-image: url("../assets/images/flag_red.png");
 }
 .flag{
