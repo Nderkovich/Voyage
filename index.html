@@ -122,7 +122,11 @@
         </div>
         <div class="container">
             <div class="card" onclick="displayCard()">
-                <img class="card__image" src="assets/images/lighthouse.jpg">
+                <picture class="card__image">
+                    <source media="(min-width: 1280px)" srcset="assets/images/lighthouse.jpg">
+                    <source media="(min-width: 900px)" srcset="assets/images/lighthouse_tablet.jpg">
+                    <img src="assets/images/lighthouse_mobile.jpg" alt="">
+                </picture>
                 <div class="card__info">
                     <span class="card__name text__head text_size_l text_aqua">Морской круиз в анапу</span><br>
                     <span class="card__paragraph text text_downriver text text_downriver"><span
@@ -138,7 +142,11 @@
                 </div>
             </div>
             <div class="card">
-                <img class="card__image card__image_small" src="assets/images/sochi.jpg">
+                <picture class="card__image">
+                    <source media="(min-width: 1280px)" srcset="assets/images/sochi.jpg">
+                    <source media="(min-width: 900px)" srcset="assets/images/sochi_tablet.jpg">
+                    <img src="assets/images/sochi_mobile.jpg" alt="">
+                </picture>
                 <div class="card__info">
                     <span class="card__name text__head text_size_l text_aqua">Обзораня морская прогулка с
                         экскурсией</span><br>
@@ -156,7 +164,11 @@
                 </div>
             </div>
             <div class="card">
-                <img class="card__image card__image_small" src="assets/images/gelendjik.jpg">
+                <picture class="card__image">
+                    <source media="(min-width: 1280px)" srcset="assets/images/gelendjik.jpg">
+                    <source media="(min-width: 900px)" srcset="assets/images/gelendjik_tablet.jpg">
+                    <img src="assets/images/gelendjik_mobile.jpg" alt="">
+                </picture>
                 <div class="card__info">
                     <span class="card__name text__head text_size_l text_aqua">Морской прогулка в
                         Геленджик</span><br>
@@ -173,7 +185,11 @@
                 </div>
             </div>
             <div class="card">
-                <img class="card__image card__image_average" src="assets/images/novorossiysk.jpg">
+                <picture class="card__image">
+                    <source media="(min-width: 1280px)" srcset="assets/images/novorossiysk.jpg">
+                    <source media="(min-width: 900px)" srcset="assets/images/novorossiysk_tablet.jpg">
+                    <img src="assets/images/novorossiysk_mobile.jpg" alt="">
+                </picture>
                 <div class="card__info">
                     <span class="card__name text__head text_size_l text_aqua">Морской круиз в
                         Новороссийск</span><br>
