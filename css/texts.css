@@ -3,7 +3,7 @@
   font-weight: 400;
 }
 
-.text_head{
+.text__head{
   font-family: "Roboto Slab";
   font-weight: 400;
 }
@@ -12,15 +12,15 @@
   font-weight: 600;
 }
 
-.text_color_aqua{
+.text_aqua{
   color: #00a2dd;
 }
 
-.text_color_downriver{
+.text_downriver{
   color: #0d3351;
 }
 
 
-.text_color_chateau{
+.text_chateau{
   color:#98a4ad;
 }
