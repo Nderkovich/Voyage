@@ -20,6 +20,7 @@
     content: "\e905";
     font-family: "icomoon";
     font-size: 15px;
+    cursor: pointer;
 }
 
 .header__menu-icon:hover .header__dropdown {
@@ -67,6 +68,7 @@
     letter-spacing: 1px;
     font-weight: 600;
     text-align: center;
+    cursor: pointer;
 }
 
 .header__bar-item_phone {
