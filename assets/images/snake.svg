@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 308" width="75" height="308">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: #0d3351;stroke-width: 3;stroke-dasharray: 12,6 } 
+	</style>
+	<path id="Фигура 1" class="shp0" d="M50.19 3.69C58.03 27.21 69.69 34.36 64.84 71.88C57.19 109.03 22.89 117.97 12.41 158.8C2.77 211.16 47.37 207.27 44.83 270.19C44.43 280 44.3 291.75 41.65 300.72" />
+</svg>

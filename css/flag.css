@@ -1,0 +1,29 @@
+
+.flag.blue{
+    background-image: url("../assets/images/flag_blue.png");
+}
+
+.flag.red{
+    background-image: url("../assets/images/flag_red.png");
+}
+.flag{
+    height: 103px;
+    width: 89px;
+    z-index: 1;
+    top: -10px;
+    right: 10%;  
+    position: absolute;
+    text-align: center;
+}
+
+
+.flag .flag__text{
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-top: 30px;
+    line-height: 18px;
+}
