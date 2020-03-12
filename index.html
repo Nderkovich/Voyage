@@ -18,15 +18,20 @@
 
 <script>
     function displayCard() {
-        document.getElementsByClassName("detail")[0].style.display = "block";
+        document.getElementsByClassName("detail")[0].style.display = "flex";
+        document.getElementsByClassName("darker")[0].style.display = "block";
+        document.body.style.overflow = "hidden";
     }
 
     function closeCard() {
         document.getElementsByClassName("detail")[0].style.display = "none";
+        document.getElementsByClassName("darker")[0].style.display = "none";
+        document.body.style.overflow = "visible";
     }
 </script>
 
 <body>
+    <div class="darker"></div>
     <div class="detail">
         <div class="detail__card">
             <input type="button" class="detail__card-cross" onclick="closeCard()">
