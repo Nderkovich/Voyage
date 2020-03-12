@@ -18,15 +18,20 @@
 
 <script>
     function displayCard() {
-        document.getElementsByClassName("detail")[0].style.display = "block";
+        document.getElementsByClassName("detail")[0].style.display = "flex";
+        document.getElementsByClassName("darker")[0].style.display = "block";
+        document.body.style.overflow = "hidden";
     }
 
     function closeCard() {
         document.getElementsByClassName("detail")[0].style.display = "none";
+        document.getElementsByClassName("darker")[0].style.display = "none";
+        document.body.style.overflow = "visible";
     }
 </script>
 
 <body>
+    <div class="darker"></div>
     <div class="detail">
         <div class="detail__card">
             <input type="button" class="detail__card-cross" onclick="closeCard()">
@@ -105,23 +110,23 @@
                 </div>
             </div>
         </nav>
-        <div class="header__content">
+        <section class="header__content">
             <img src="assets/images/logo.png" class="header__content-logo">
             <p class="header__content_small">Морские прогулки</p>
             <p class="header__content_big">По чёрному морю</p>
             <button class="tour__button">Выбрать круиз</button>
-        </div>
-        <div class="header__snake">
+        </section>
+        <section class="header__snake">
             <img src="assets/images/snake.svg" alt="" class="snake">
-        </div>
+        </section>
     </header>
-    <div class="main">
-        <div class="catalog">
+    <main class="main">
+        <section class="catalog">
             <p class="catalog__name">Каталог круизов</p>
             <p class="catalog__sorter">Сортировать по цене </p>
-        </div>
-        <div class="container">
-            <div class="card" onclick="displayCard()">
+        </section>
+        <section class="container">
+            <article class="card" onclick="displayCard()">
                 <picture class="card__image">
                     <source media="(min-width: 1280px)" srcset="assets/images/lighthouse.jpg">
                     <source media="(min-width: 900px)" srcset="assets/images/lighthouse_tablet.jpg">
@@ -140,8 +145,8 @@
                 <div class="flag flag_hit">
                     <div class="flag__info text">Хит продаж</div>
                 </div>
-            </div>
-            <div class="card">
+            </article>
+            <article class="card">
                 <picture class="card__image">
                     <source media="(min-width: 1280px)" srcset="assets/images/sochi.jpg">
                     <source media="(min-width: 900px)" srcset="assets/images/sochi_tablet.jpg">
@@ -162,8 +167,8 @@
                 <div class="flag flag_sale">
                     <div class="flag__info text">Акция</div>
                 </div>
-            </div>
-            <div class="card">
+            </article>
+            <article class="card">
                 <picture class="card__image">
                     <source media="(min-width: 1280px)" srcset="assets/images/gelendjik.jpg">
                     <source media="(min-width: 900px)" srcset="assets/images/gelendjik_tablet.jpg">
@@ -183,8 +188,8 @@
                 <div class="flag flag_sale">
                     <div class="flag__info text">Акция</div>
                 </div>
-            </div>
-            <div class="card">
+            </article>
+            <article class="card">
                 <picture class="card__image">
                     <source media="(min-width: 1280px)" srcset="assets/images/novorossiysk.jpg">
                     <source media="(min-width: 900px)" srcset="assets/images/novorossiysk_tablet.jpg">
@@ -200,8 +205,8 @@
                         мин.</span><br>
                     <span class="card__price text__head text_downriver">14 800 руб.</span>
                 </div>
-            </div>
-            <div class="card">
+            </article>
+            <article class="card">
                 <img class="card__image card__image_average" src="assets/images/durso.jpg">
                 <div class="card__info">
                     <span class="card__name text__head text_size_l text_aqua">Морская прогулка в
@@ -213,19 +218,19 @@
                         мин.</span><br>
                     <span class="card__price text__head text_downriver">14 800 руб.</span>
                 </div>
-            </div>
-        </div>
-        <div class="button_container">
+            </article>
+        </section>
+        <section class="button_container">
             <button class="tour__button">Больше круизов <span class="tour__button-arrow"></span></button>
-        </div>
-    </div>
+        </section>
+    </main>
     <footer class="footer text text_downriver">
-        <div class="footer__left">
+        <section class="footer__left">
             <span>Вход для патнеров</span>
             <span>О компании</span>
             <span>Контакты</span>
-        </div>
-        <div class="footer__middle">
+        </section>
+        <section class="footer__middle">
             <span>Будь на связи</span>
             <div class="footer__social">
                 <div class="vk"></div>
@@ -233,12 +238,12 @@
                 <div class="yout"></div>
                 <div class="insta"></div>
             </div>
-        </div>
-        <div class="footer__right">
+        </section>
+        <section class="footer__right">
             <span class="text_size_l">8 800 500-61-05</span>
             <span>Круглосуточная поддержка</span>
             <span>© 2016 ООО "Городские круизы"</span>
-        </div>
+        </section>
     </footer>
 </body>
 
