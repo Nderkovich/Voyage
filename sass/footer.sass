@@ -1,0 +1,72 @@
+.footer
+    max-width: 100%
+    margin: auto
+    display: flex
+    height: 160px
+    background-color: #ffffff
+    flex-direction: row
+    justify-content: center
+
+    &__left,
+    &__middle,
+    &__right
+        margin-top: 1%
+        display: flex
+        flex-direction: column
+        font-size: 14px
+        letter-spacing: -0.5px
+        line-height: 24px
+
+    &__middle
+        margin-left: 20%
+        margin-right: 20%
+
+    &__social
+        font-size: 20px
+        font-family: "icomoon"
+        color: #0d3351
+        display: flex
+        flex-direction: row
+
+.vk,
+.yout,
+.ok,
+.insta
+    margin-right: 10px
+    cursor: pointer
+
+.vk::after
+    content: "\e902"
+
+.yout::after
+    content: "\e901"
+
+.ok::after
+    content: "\e900"
+
+.insta::after
+    content: "\e903"
+
+@media screen and (min-width: 900px) and (max-width: 1280px)
+    .d
+        width: 750px
+
+@media screen and (max-width: 900px)
+    .d
+        width: 100%
+
+    .footer
+        flex-direction: column
+        margin: auto
+
+        &__left
+            display: none
+
+        &__middle
+            margin-right: 0px
+            margin-left: 0px
+
+        &__middle,
+        &__right
+            align-items: center
+            justify-content: space-evenly
