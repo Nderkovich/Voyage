@@ -5,113 +5,113 @@
     background-repeat: no-repeat
     background-size: cover
 
-    &__menu
-        width: 1170px
-        margin: auto
-        padding-top: 35px
+.header__menu
+    width: 1170px
+    margin: auto
+    padding-top: 35px
+    display: flex
+    flex-wrap: wrap
+    flex-direction: row
+    justify-content: space-between
+
+    &-icon::before
+        content: "\e905"
+        font-family: "icomoon"
+        font-size: 15px
+        cursor: pointer
+
+    &-icon:hover .header__dropdown
+        display: block
+
+.header__dropdown
+    display: none
+    position: absolute
+    min-width: 160px
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2)
+    z-index: 1
+    width: 420px
+    height: 413px
+    background-color: #0d3351
+
+    &-list
+        margin: 50px 0px 30px 30px
+
+    &-item
+        margin-bottom: 20px
         display: flex
-        flex-wrap: wrap
-        flex-direction: row
-        justify-content: space-between
-
-        &-icon::before
-            content: "\e905"
-            font-family: "icomoon"
-            font-size: 15px
-            cursor: pointer
-
-        &-icon:hover .header__dropdown
-            display: block
-
-    &__dropdown
-        display: none
-        position: absolute
-        min-width: 160px
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2)
-        z-index: 1
-        width: 420px
-        height: 413px
-        background-color: #0d3351
-
-        &-list
-            margin: 50px 0px 30px 30px
-
-        &-item
-            margin-bottom: 20px
-            display: flex
-            font-size: 18px
-            letter-spacing: 1px
-            line-height: 24px
-            color: #ffffff
-            font-family: "Roboto Slab"
-            font-weight: 400
-            text-decoration: none
-
-    &__bar
-        display: flex
-        flex-direction: row
-        font-size: 14px
-        color: #0d3351
-        font-family: "Montserrat"
-
-        &-item
-            margin-left: 35px
-            letter-spacing: 1px
-            font-weight: 600
-            text-align: center
-            cursor: pointer
-
-            &_phone
-                font-weight: 700
-                text-align: left
-
-            &_profile::before
-                content: "\e904"
-                font-family: "icomoon"
-                font-size: 12px
-                color: #33c7fd
-                margin-right: 5px
-
-            &:not(.header__bar-item_phone)::after
-                content: "\ea1c"
-                font-family: "icomoon"
-                font-size: 9px
-                margin-left: 5px
-                color: #0d3351
-
-            &_currency::before
-                content: "\e906"
-                font-family: "icomoon"
-                font-size: 13px
-                margin-right: 5px
-                color: #33c7fd
-
-    &__phone-descr
-        font-size: 9px
-        font-weight: 400
-
-    &__content
-        margin-top: 15px
-        color: #0d3351
-        text-align: center
+        font-size: 18px
+        letter-spacing: 1px
+        line-height: 24px
+        color: #ffffff
         font-family: "Roboto Slab"
-        line-height: 0px
         font-weight: 400
+        text-decoration: none
 
-        &_small
-            font-size: 36px
-            letter-spacing: 1px
+.header__bar
+    display: flex
+    flex-direction: row
+    font-size: 14px
+    color: #0d3351
+    font-family: "Montserrat"
 
-        &_big
-            font-size: 100px
-            letter-spacing: -2px
-            font-weight: 400
-            text-transform: uppercase
+.header__bar-item
+    margin-left: 35px
+    letter-spacing: 1px
+    font-weight: 600
+    text-align: center
+    cursor: pointer
 
-    &__snake
-        padding-top: 20px
-        text-align: center
-        position: relative
+    &_phone
+        font-weight: 700
+        text-align: left
+
+    &_profile::before
+        content: "\e904"
+        font-family: "icomoon"
+        font-size: 12px
+        color: #33c7fd
+        margin-right: 5px
+
+    &:not(.header__bar-item_phone)::after
+        content: "\ea1c"
+        font-family: "icomoon"
+        font-size: 9px
+        margin-left: 5px
+        color: #0d3351
+
+    &_currency::before
+        content: "\e906"
+        font-family: "icomoon"
+        font-size: 13px
+        margin-right: 5px
+        color: #33c7fd
+
+.header__bar__phone-descr
+    font-size: 9px
+    font-weight: 400
+
+.header__content
+    margin-top: 15px
+    color: #0d3351
+    text-align: center
+    font-family: "Roboto Slab"
+    line-height: 0px
+    font-weight: 400
+
+    &_small
+        font-size: 36px
+        letter-spacing: 1px
+
+    &_big
+        font-size: 100px
+        letter-spacing: -2px
+        font-weight: 400
+        text-transform: uppercase
+
+.header__bar__snake
+    padding-top: 20px
+    text-align: center
+    position: relative
 
 .snake
     height: 297px
@@ -123,14 +123,14 @@
         &__menu
             width: 750px
 
-        &__content
-            margin-top: 50px
+    .header__content
+        margin-top: 50px
 
-            &_small
-                font-size: 26px
+        &_small
+            font-size: 26px
 
-            &__content_big
-                font-size: 72px
+        &_big
+            font-size: 72px
 
 @media screen and (max-width: 900px)
     .header
@@ -150,19 +150,19 @@
         &__bar
             display: none
 
-        &__content
-            width: 70%
-            margin: auto
-            padding-top: 20px
+    .header__content
+        width: 70%
+        margin: auto
+        padding-top: 20px
 
-            &__content_small
-                font-size: 20px
+        &_small
+            font-size: 20px
 
-            &__content_big
-                line-height: 45px
-                margin-top: 40px
-                margin-bottom: 40px
-                font-size: 50px
+        &_big
+            line-height: 45px
+            margin-top: 40px
+            margin-bottom: 40px
+            font-size: 50px
 
     .snake
         height: 230px

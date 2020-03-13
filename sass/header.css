@@ -115,7 +115,7 @@
   color: #33c7fd;
 }
 
-.header__phone-descr {
+.header__bar__phone-descr {
   font-size: 9px;
   font-weight: 400;
 }
@@ -141,7 +141,7 @@
   text-transform: uppercase;
 }
 
-.header__snake {
+.header__bar__snake {
   padding-top: 20px;
   text-align: center;
   position: relative;
@@ -164,7 +164,7 @@
   .header__content_small {
     font-size: 26px;
   }
-  .header__content__content_big {
+  .header__content_big {
     font-size: 72px;
   }
 }
@@ -192,10 +192,10 @@
     margin: auto;
     padding-top: 20px;
   }
-  .header__content__content_small {
+  .header__content_small {
     font-size: 20px;
   }
-  .header__content__content_big {
+  .header__content_big {
     line-height: 45px;
     margin-top: 40px;
     margin-bottom: 40px;

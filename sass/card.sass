@@ -10,36 +10,6 @@ $name: __name
     position: relative
     background-color: #ffffff
 
-    &#{$img}
-        height: auto
-        width: 100%
-
-    &#{$img}_average
-        object-fit: cover
-        object-position: 100% 35%
-        width: 100%
-        height: 215px
-
-    &#{$img}_small
-        object-fit: cover
-        object-position: 100% 55%
-        width: 100%
-        height: 113px
-
-    &__info
-        margin-left: 40px
-        @include myfont(inherit, 1px, 24px)
-
-    &#{$name}
-        @include myfont(18px, 1px, 48px)
-
-        &::after
-            content: "\ea1c"
-            font-family: "icomoon"
-            margin-left: 8px
-            font-size: 10px
-            cursor: pointer
-
     &__paragraph
         @include myfont(13px, 1px, 17px)
 
@@ -50,6 +20,36 @@ $name: __name
     &__sale
         font-size: 18px
         text-decoration: line-through
+
+    &__info
+        margin-left: 40px
+        @include myfont(inherit, 1px, 24px)
+
+.card__image
+    height: auto
+    width: 100%
+
+    &_average
+        object-fit: cover
+        object-position: 100% 35%
+        width: 100%
+        height: 215px
+
+    &_small
+        object-fit: cover
+        object-position: 100% 55%
+        width: 100%
+        height: 113px
+
+.card__name
+    @include myfont(18px, 1px, 48px)
+
+    &::after
+        content: "\ea1c"
+        font-family: "icomoon"
+        margin-left: 8px
+        font-size: 10px
+        cursor: pointer
 
 @media screen and (min-width: 900px) and (max-width: 1280px)
     .card
