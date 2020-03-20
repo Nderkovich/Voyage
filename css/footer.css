@@ -22,9 +22,6 @@
     font-size: 14px;
     letter-spacing: -0.5px;
     line-height: 24px;
-    color: #0d3351;
-    font-family: 'Montserrat';
-    font-weight: 400;
 }
 
 .footer__middle {
@@ -32,7 +29,7 @@
     margin-right: 20%;
 }
 
-.social {
+.footer__social {
     font-size: 20px;
     font-family: "icomoon";
     color: #0d3351;
@@ -45,6 +42,7 @@
 .ok,
 .insta {
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .vk::after {

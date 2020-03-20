@@ -39,48 +39,33 @@
     line-height: 24px;
 }
 
-.category{
-    font-weight: 900;
-}
-
 .card__name{
   font-size: 18px;
   letter-spacing: 1px;
   line-height: 48px;
-  color: #00a2dd;
-  font-family: "Roboto Slab";
-  font-weight: 600;
 }
 .card__name::after{
   content: "\ea1c";
   font-family: "icomoon";
   margin-left: 8px;
   font-size: 10px;
+  cursor: pointer;
 }
 
 .card__paragraph{
   font-size: 13px;
   letter-spacing: 1px;
   line-height: 17px;
-  color: #0d3351;
-  font-family: "Montserrat";
-  font-weight: 400;
 }
 
 .card__price{
   font-size: 30px;
   line-height: 48px;
-  color: #0d3351;
-  font-family: "Roboto Slab";
-  font-weight: 400;
 }
 
 .card__sale{
   font-size: 18px;
   text-decoration: line-through;
-  color: #98a4ad;
-  font-family: "Roboto Slab";
-  font-weight: 400;
 }
 
 /*tablet*/

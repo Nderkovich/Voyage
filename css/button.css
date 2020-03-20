@@ -10,7 +10,7 @@
     outline: none;
 }
 
-.tour__button .arrow::after{
+.tour__button-arrow::after{
     content: "\ea1c";
     font-family: "icomoon";
     font-size: 9px;

@@ -1,0 +1,91 @@
+.card {
+  position: relative;
+  background-color: #ffffff;
+}
+
+.card__paragraph {
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 17px;
+}
+
+.card__price {
+  font-size: 30px;
+  line-height: 48px;
+}
+
+.card__sale {
+  font-size: 18px;
+  text-decoration: line-through;
+}
+
+.card__info {
+  margin-left: 40px;
+  font-size: inherit;
+  letter-spacing: 1px;
+  line-height: 24px;
+}
+
+.card__image {
+  height: auto;
+  width: 100%;
+}
+
+.card__image_average {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 100% 35%;
+     object-position: 100% 35%;
+  width: 100%;
+  height: 215px;
+}
+
+.card__image_small {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 100% 55%;
+     object-position: 100% 55%;
+  width: 100%;
+  height: 113px;
+}
+
+.card__name {
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 48px;
+}
+
+.card__name::after {
+  content: "\ea1c";
+  font-family: "icomoon";
+  margin-left: 8px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 900px) and (max-width: 1280px) {
+  .card__image {
+    height: 272px;
+  }
+  .card__name {
+    line-height: 0px;
+    font-weight: 400;
+  }
+  .card__info {
+    margin: 30px 10px 10px 30px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .card__image {
+    height: 229px;
+  }
+  .card__name {
+    line-height: 0px;
+    font-weight: 400;
+  }
+  .card__info {
+    margin: 30px 10px 10px 25px;
+  }
+}
+/*# sourceMappingURL=card.css.map */

@@ -1,0 +1,26 @@
+.text{
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+.text__head{
+  font-family: "Roboto Slab";
+  font-weight: 400;
+}
+
+.text_size_l{
+  font-weight: 600;
+}
+
+.text_aqua{
+  color: #00a2dd;
+}
+
+.text_downriver{
+  color: #0d3351;
+}
+
+
+.text_chateau{
+  color:#98a4ad;
+}

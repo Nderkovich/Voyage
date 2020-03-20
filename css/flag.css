@@ -1,9 +1,9 @@
 
-.flag.blue{
+.flag_hit{
     background-image: url("../assets/images/flag_blue.png");
 }
 
-.flag.red{
+.flag_sale{
     background-image: url("../assets/images/flag_red.png");
 }
 .flag{
@@ -17,12 +17,10 @@
 }
 
 
-.flag .flag__text{
+.flag__info{
     font-size: 14px;
     letter-spacing: 1px;
     color: #ffffff;
-    font-family: "Montserrat";
-    font-weight: 400;
     text-transform: uppercase;
     padding-top: 30px;
     line-height: 18px;

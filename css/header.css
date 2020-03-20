@@ -16,17 +16,18 @@
     justify-content: space-between;
 }
 
-.menu_icon::before {
+.header__menu-icon::before {
     content: "\e905";
     font-family: "icomoon";
     font-size: 15px;
+    cursor: pointer;
 }
 
-.menu_icon:hover .dropdown_menu {
+.header__menu-icon:hover .header__dropdown {
     display: block;
 }
 
-.dropdown_menu {
+.header__dropdown {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -38,11 +39,11 @@
     background-color: #0d3351;
 }
 
-.dropdown_menu__list {
+.header__dropdown-list {
     margin: 50px 0px 30px 30px;
 }
 
-.dropdown_menu__list .list_item {
+.header__dropdown-item {
     margin-bottom: 20px;
     display: flex;
     font-size: 18px;
@@ -54,7 +55,7 @@
     text-decoration: none;
 }
 
-.menu_bar {
+.header__bar {
     display: flex;
     flex-direction: row;
     font-size: 14px;
@@ -62,24 +63,25 @@
     font-family: "Montserrat";
 }
 
-.menu_item {
+.header__bar-item {
     margin-left: 35px;
     letter-spacing: 1px;
     font-weight: 600;
     text-align: center;
+    cursor: pointer;
 }
 
-.menu_phone {
+.header__bar-item_phone {
     font-weight: 700;
     text-align: left;
 }
 
-.menu_phone_descr {
+.header__phone-descr {
     font-size: 9px;
     font-weight: 400;
 }
 
-.profile::before {
+.header__bar-item_profile::before {
     content: "\e904";
     font-family: "icomoon";
     font-size: 12px;
@@ -87,7 +89,7 @@
     margin-right: 5px;
 }
 
-.menu_item:not(.phone)::after {
+.header__bar-item:not(.header__bar-item_phone)::after {
     content: "\ea1c";
     font-family: "icomoon";
     font-size: 9px;
@@ -95,7 +97,7 @@
     color: #0d3351;
 }
 
-.currency::before {
+.header__bar-item_currency::before {
     content: "\e906";
     font-family: "icomoon";
     font-size: 13px;
@@ -112,12 +114,12 @@
     font-weight: 400;
 }
 
-.header__content .content_small {
+.header__content_small {
     font-size: 36px;
     letter-spacing: 1px;
 }
 
-.header__content .content_big {
+.header__content_big {
     font-size: 100px;
     letter-spacing: -2px;
     font-weight: 400;
@@ -129,23 +131,27 @@
     text-align: center;
     position: relative;
 }
-.header__snake .snake{
+.snake{
     height: 297px;
 }
 
 /*tablet*/
 
 @media screen and (min-width: 900px) and (max-width: 1280px) {
+    .header {
+        background-image: url("../assets/images/soch_tablet.jpg");
+    }
+
     .header__menu {
         width: 750px;
     }
     .header__content {
         margin-top: 50px;
     }
-    .header__content .content_small {
+    .header__content_small {
         font-size: 26px;
     }
-    .header__content .content_big {
+    .header__content_big {
         font-size: 72px;
     }
 }
@@ -156,18 +162,19 @@
 @media screen and (max-width: 900px) {
     .header {
         height: 600px;
+        background-image: url("../assets/images/soch_mobile.jpg");
     }
     .header__menu {
         width: 100%;
     }
-    .dropdown_menu{
+    .header__dropdown{
         max-width: 300px;
     }
-    .menu_icon {
+    .header__menu-icon {
         position: absolute;
         margin-left: 3%;
     }
-    .menu_bar {
+    .header__bar {
         display: none;
     }
     .header__content {
@@ -175,16 +182,16 @@
         margin: auto;
         padding-top: 20px;
     }
-    .header__content .content_small {
+    .header__content_small {
         font-size: 20px;
     }
-    .header__content .content_big {
+    .header__content_big {
         line-height: 45px;
         margin-top: 40px;
         margin-bottom: 40px;
         font-size: 50px;
     }
-    .header__snake .snake{
+    .snake{
         height: 230px;
     }
 }
